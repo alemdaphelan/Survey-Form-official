@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <img src="https://www.izone.edu.vn/wp-content/uploads/2023/07/discuss-di-voi-gioi-tu-gi-1.jpg" />
+        <main>
+        <header>
+        <h1>Alem Survey Form</h1>
+        <p>Thank you for taking the time to help me improve the platform</p>
+        </header>
+        <form action="https://survey-form.freecodecamp.rocks/" method="post">
+        <div>
+            <label for="name">Name <article><input required id="name" type="text" placeholder="Enter your name" class="info" /></article></label>
+            <label for="email">Email <article><input required id="email" type="email" placeholder="Enter your email" class="info" /></article></label>
+            <label for="age">Age <span>(optional)</span> <article><input placeholder="Age" required max="120" min="13" class="info" type="number" id="age" /></article></label>
+            <label for="roles">Which option best describes your current role?
+                <article>
+                    <select height="20px" required class="info" id="roles">
+                        <label class="option">
+                        <option value="">Select current role</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Full Time Learner</option>
+                        <option value="4">Prefers not to say</option>
+                        <option value="5">Other</option>
+                        </label>
+                    </select>
+                </article>
+            </label>
+        </div>
+        <div>
+            <label for="answer">
+                Would you recomend Alemm to a friends ?
+                <article><input type="radio" id="answer" name="res" /> Definitely</article>
+                <article><input class="answer" type="radio" id="answer" name="res" /> Maybe</article>
+                <article><input class="answer" type="radio" id="answer" name="res" /> Not Sure</article>
+            </label>
+        </div>
+        <div>
+            <label class="answer-2" for="answer-2">
+                What is your favorite feature about Alem?
+                <article>
+                    <select id="answer-2">
+                        <label class="option">
+                        <option disabled="disabled" value="">Select an option</option>
+                        <option value="1">Challenges</option>
+                        <option value="2">Projects</option>
+                        <option value="3">Community</option>
+                        <option value="4">Open Source</option>
+                        </label>
+                    </select>
+                </article>
+            </label>
+        </div>
+        <div>
+            <label for="answer-3">
+                What would you like to see improved? <span>(Check all that apply)</span>
+                <article><input class="answer" id="answer-3" type="checkbox" /> Front-end Projects</article>
+                <article><input class="answer" id="answer-3" type="checkbox" /> Back-end Projects</article>
+                <article><input class="answer" id="answer-3" type="checkbox" /> Data Visualization</article>
+                <article><input class="answer" id="answer-3" type="checkbox" /> Challenges</article>
+                <article><input class="answer" id="answer-3" type="checkbox" /> Open Source Community</article>
+                <article><input class="answer" id="answer-3" type="checkbox" /> Gitter help rooms</article>
+                <article><input class="answer" id="answer-3" type="checkbox" /> Videos</article>
+                <article><input class="answer" id="answer-3" type="checkbox" /> City Meetups</article>
+                <article><input class="answer" id="answer-3" type="checkbox" /> Wiki</article>
+                <article><input class="answer" id="answer-3" type="checkbox" /> Forum</article>
+                <article><input class="answer" id="answer-3" type="checkbox" /> Additional Courses</article>
+            </label>
+        </div>
+        <div>
+            <label for="comment">
+                Any comments or suggestions?
+                <textarea placeholder="Enter your comment here..." id="comment"></textarea>
+                <input type="submit" name="Send" />
+            </label>
+        </div>
+        </form>
+        </main>
+    </body>
+</html>
